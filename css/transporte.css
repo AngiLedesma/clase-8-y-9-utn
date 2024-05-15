@@ -68,7 +68,8 @@ footer {
 }
 
 .holder {
-    width: 960px;
+
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -79,6 +80,10 @@ h2 {
 
 
 /*inicio home*/
+
+.homeimg img {
+    max-width: 100%;
+}
 
 .columnas {
     display: flex;
@@ -188,7 +193,7 @@ h2 {
 
 .datos ul li {
     font-size: 13px;
-    background-color: aqua;
+    /* background-color: aqua; */
 
 }
 
@@ -226,20 +231,94 @@ h2 {
 .formulario input[type="submit"] {
     background-color: #6da9ed;
     width: auto;
-    padding: 8px;
+    padding: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     color: white;
     cursor: pointer;
     /* position: relative;
     left: 100px; */
 }
+
 .formulario input[type="submit"]:hover {
     background-color: #2e64a1;
 
 }
+
 /*
 text-alig >p
 display flex, justify conttent:center--->p
 */
 
 /*fin contacto*/
+
+/*inicio @media 500*/
+@media screen and (max-width:550px) {
+
+    /*home */
+
+    .columnas {
+        background-color: yellow;
+        flex-direction: column;
+    }
+
+    .bienvenidos,
+    .testimonios {
+        width: 100%;
+    }
+
+    .holder {
+        padding: 0 16px;
+    }
+
+
+    .personas {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .persona {
+        width: 47%;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .datos {
+        display: none;
+    }
+
+    header .holder {
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 16px 0;
+    }
+
+    header h1 {
+        position: static;
+        margin-left: 10px;
+        /* display: none; */
+        font-size: 27px;
+    }
+
+    header img {
+        max-width: 80px;
+    }
+
+}
+
+/*fin @media 500*/
+
+@media screen and (max-width:320px) {
+
+    nav ul.holder {
+        flex-direction: column;
+        padding: 0;
+    }
+
+
+
+
+}
