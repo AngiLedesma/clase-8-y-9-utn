@@ -13,14 +13,14 @@ header {
 }
 
 /* header h1 {
-    cualquiera de las dos opciones e slo mismo 
+    cualquiera de las dos opciones es lo mismo
 } */
 
 h1 {
     color: white;
     font-weight: 100;
     font-style: italic;
-    /* display: inline-flex; se puede se con caja flexible o con display */
+    /* display: inline-flex; se puede sea con caja flexible o con display */
     display: inline-block;
     position: relative;
     bottom: 35px;
@@ -53,7 +53,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3)
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 nav ul li a.activo {
@@ -176,7 +176,7 @@ h2 {
 /*fin nosotros*/
 
 /*inicio servicios*/
-.servicio{
+.servicio {
     border: 1px solid #ddd;
     border-radius: 10px;
     margin: 16px 0;
@@ -284,6 +284,7 @@ display flex, justify conttent:center--->p
 
 /*fin contacto*/
 
+
 /*inicio @media 500*/
 @media screen and (max-width:550px) {
 
@@ -301,8 +302,8 @@ display flex, justify conttent:center--->p
 
     .holder {
         padding: 0 16px;
-    }
 
+    }
 
     .personas {
         flex-wrap: wrap;
@@ -342,7 +343,12 @@ display flex, justify conttent:center--->p
 
 }
 
-/*fin @media 500*/
+/*fin @media    500*/
+
+
+
+/*inicio @media  320*/
+
 
 @media screen and (max-width:320px) {
 
@@ -352,6 +358,52 @@ display flex, justify conttent:center--->p
     }
 
 
+    /*acà emepizA lo que hice practicando con @m 320*/
+
+    header {
+        padding-top: 10px;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header img {
+        max-width: 70px;
+    }
+    footer {
+        font-size: 12px;
+        padding: 5px 0;
+
+    }
+
+    /*home*/
+    .bienvenidos p {
+        font-size: 15px;
+    }
+
+    .servicio {
+        flex-wrap: wrap;
+    }
+
+    .servicio .info h4 {
+        font-size: 15px;
+        padding-bottom: 8px;
+        margin-top: 0%;
+    }
+
+    .servicio .info p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+
+    .servicio img {
+        background-color: aquamarine;
+        max-width: 100px;
+        /*intentè centrar img*/
+
+    }
 
 
 }
