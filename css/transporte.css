@@ -186,7 +186,7 @@ h2 {
     padding: 10px;
 }
 
-.servicio:nth-child(even){
+.servicio:nth-child(even) {
     flex-direction: row-reverse;
 }
 
@@ -213,7 +213,32 @@ h2 {
 
 /*fin servicio*/
 
+/*inicio galeria*/
 
+/*puse jpg en galeria*/
+h2 {
+    background-color: #a54c84;
+
+}
+
+.marcos {
+    background-color: #2e64a1;
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.marco img {
+    margin: 10px;
+    border: 1px solid #0a0366;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/*fin de galeria*/
 
 /*incio contacto*/
 
@@ -377,6 +402,7 @@ display flex, justify conttent:center--->p
     header img {
         max-width: 70px;
     }
+
     footer {
         font-size: 12px;
         padding: 5px 0;
